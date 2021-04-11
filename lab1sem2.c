@@ -28,12 +28,11 @@ int main(){
 	int i, n,j=0;
 	e = 0.1; 
 
-	for (j=0;j<=4;j++){
+	for (j=0;j<=4;j++){ 
 		t = x[j];
 		i = 0;
 		while(modulus(t) > e){
 			t = (myPow(-1,i)*myPow(x[j],2*i+1))/factorial(2*i+1); 
-			y[j] = y[j] + t; 
 			i++;
 		}
 	}
